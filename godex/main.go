@@ -6,9 +6,8 @@ import (
 )
 
 func main() {
-	client := api.NewClient(5 * time.Second)
 	cfg := &config{
-		client: client,
+		client: api.NewClient(5*time.Second, 5*time.Second),
 	}
 	replLoop(cfg)
 }

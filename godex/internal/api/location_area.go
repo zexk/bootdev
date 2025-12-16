@@ -22,6 +22,15 @@ func (c *Client) PrintLocationArea(pageUrl *string) (LocationAreaRes, error) {
 		url = *pageUrl
 	}
 
+	if data, exists := c.cache.Get(url); exists {
+		locAreaRes := LocationAreaRes{}
+		err := json.Unmarshal(data, &locAreaRes)
+		if err != nil {
+			return LocationAreaRes{}, err
+		}
+		return locAreaRes, nil
+	}
+
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		return LocationAreaRes{}, err
@@ -44,5 +53,6 @@ func (c *Client) PrintLocationArea(pageUrl *string) (LocationAreaRes, error) {
 		return LocationAreaRes{}, err
 	}
 
+	c.cache.Set(url, data)
 	return locAreaRes, nil
 }
