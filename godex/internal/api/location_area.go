@@ -16,7 +16,7 @@ type LocationAreaRes struct {
 	} `json:"results"`
 }
 
-func (c *Client) PrintLocationArea(pageUrl *string) (LocationAreaRes, error) {
+func (c *Client) GetLocationArea(pageUrl *string) (LocationAreaRes, error) {
 	url := baseUrl + "/location-area"
 	if pageUrl != nil {
 		url = *pageUrl

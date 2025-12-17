@@ -12,6 +12,7 @@ type config struct {
 	client     api.Client
 	nextMapUrl *string
 	prevMapUrl *string
+	dex        map[string]api.MonRes
 }
 
 func replLoop(c *config) {
@@ -27,8 +28,13 @@ func replLoop(c *config) {
 			continue
 		}
 
+		args := []string{}
+		if len(words) > 1 {
+			args = words[1:]
+		}
+
 		if cmd, found := getCmds()[words[0]]; found {
-			err := cmd.callback(c)
+			err := cmd.callback(c, args...)
 			if err != nil {
 				fmt.Println(err)
 			}

@@ -7,7 +7,8 @@ import (
 
 func main() {
 	cfg := &config{
-		client: api.NewClient(5*time.Second, 5*time.Second),
+		dex : map[string]api.MonRes{},
+		client: api.NewClient(5*time.Second, 5*time.Minute),
 	}
 	replLoop(cfg)
 }
