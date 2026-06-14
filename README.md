@@ -14,6 +14,7 @@ Each directory is a self-contained project with its own `flake.nix`. Enter a dev
 | `webflyx-local` | Learn Git | Git |
 | `git-2/megacorp` | Learn Git | Git |
 | `pysteroid` | Build an Asteroids Game | Python |
+| `staticwebgen` | Build a Static Site Generator | Python |
 | `agentpy` | Build an AI Agent | Python |
 | `heifer` | Learn JavaScript | JavaScript |
 | `godex` | Build a Pokedex | Go |
