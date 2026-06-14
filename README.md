@@ -11,7 +11,7 @@ Each directory is a self-contained project with its own `flake.nix`. Enter a dev
 | `bookbot` | Build a Bookbot | Python |
 | `worldbanc` | Learn Linux | Bash |
 | `webflyx` | Learn Git | Git |
-| `git-2/megacorp` | Learn Git | Git |
+| `megacorp` | Learn Git 2 | Git |
 | `pysteroid` | Build an Asteroids Game | Python |
 | `staticwebgen` | Build a Static Site Generator | Python |
 | `agentpy` | Build an AI Agent | Python |
