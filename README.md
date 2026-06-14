@@ -17,7 +17,7 @@ Each directory is a self-contained project with its own `flake.nix`. Enter a dev
 | `agentpy` | Build an AI Agent | Python |
 | `heifer` | Learn JavaScript | JavaScript |
 | `godex` | Build a Pokedex | Go |
-| `goserver` | Learn HTTP Servers | Go |
+| `goserver` | Learn Docker | Go |
 | `chirpy` | Learn HTTP Servers | Go, PostgreSQL |
 | `blog-aggregator` | Build a Blog Aggregator | Go, PostgreSQL |
 | `rabbit` | Learn Pub/Sub Architecture | Go, RabbitMQ |
