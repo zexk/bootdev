@@ -19,3 +19,6 @@ Each directory is a self-contained project with its own `flake.nix`. Enter a dev
 | `heifer` | Learn JavaScript | Node.js |
 | `blog-aggregator` | Learn SQL | Go, PostgreSQL |
 | `rabbit` | Learn Pub/Sub | Go, RabbitMQ |
+| `godex` | Learn Go | Go |
+| `agentpy` | Build an AI Agent | Python |
+| `pysteroid` | Learn OOP | Python |
