@@ -13,7 +13,6 @@ Each directory is a self-contained project with its own `flake.nix`. Enter a dev
 | `webflyx` | Learn Git | Markdown/Git |
 | `webflyx-local` | Learn Git (local) | Markdown/Git |
 | `git-2/megacorp` | Learn Git 2 | Git |
-| `lfs` | Learn Git LFS | Git |
 | `goserver` | Learn HTTP Servers | Go, Python |
 | `chirpy` | Learn Web Servers | Go, PostgreSQL |
 | `heifer` | Learn JavaScript | Node.js |
